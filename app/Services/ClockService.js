@@ -6,6 +6,7 @@ class ClockService {
     let hours = date.getHours()
     let zero = ""
     if (hours > 12) { hours = hours - 12 }
+    if (hours == 0) { hours = 12 }
     if (minutes < 10) { zero = "0" }
     console.log(hours + ":" + zero + minutes)
     if (hours > 12) {
