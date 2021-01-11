@@ -1,0 +1,70 @@
+@import "./_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $body-bg;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.input-border {
+  border: 0;
+}
+
+.cursor-pointer:hover{
+  cursor: pointer;
+}
+
+.hover-show:hover ~ .show{
+  display: inherit !important;
+  transition: display 10s;
+}
+
+.hover-effect:hover{
+margin-bottom: 0;
+transition-property: margin-bottom;
+transition-duration: 3s;
+}
+
+.imging{
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 100vh;
+}
+
+body{
+  background-size: cover;
+  max-height: 100vh;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 3px black;
+}
+
+.min-quote{
+  min-height:20vh;
+}
+
+main{
+  min-height: 100vh;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
